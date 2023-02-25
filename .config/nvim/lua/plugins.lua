@@ -19,6 +19,18 @@ return require("packer").startup(function(use)
     })
 
     use({
+        "nvim-tree/nvim-tree.lua",
+        requires = {
+            "nvim-tree/nvim-web-devicons",
+        },
+    })
+
+    use({
+        "akinsho/toggleterm.nvim",
+        tag = '*',
+   })
+
+    use({
         "VonHeikemen/lsp-zero.nvim",
         branch = "v1.x",
         requires = {
