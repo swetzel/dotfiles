@@ -1,7 +1,7 @@
 require("onedarkpro").setup({
-  options = {
-    transparency = true
-  }
+    options = {
+        transparency = true
+    }
 })
 
-vim.cmd("colorscheme onedark")
+vim.cmd.colorscheme("onedark")
