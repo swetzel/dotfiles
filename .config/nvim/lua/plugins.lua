@@ -3,39 +3,13 @@ vim.cmd.packadd("packer.nvim")
 return require("packer").startup(function(use)
 
     use({ "wbthomason/packer.nvim" })
+
     use({ "olimorris/onedarkpro.nvim" })
-    use({ "windwp/nvim-autopairs" })
-    use({ "windwp/nvim-ts-autotag" })
+    use({ "nvim-tree/nvim-web-devicons" })
 
     use({
         "nvim-treesitter/nvim-treesitter",
         run = ":TSUpdate"
-    })
-
-    use({
-        "akinsho/toggleterm.nvim",
-        tag = '*',
-    })
-
-    use({
-        "nvim-telescope/telescope.nvim",
-        tag = "0.1.1",
-        requires = { "nvim-lua/plenary.nvim" }
-    })
-
-    use({
-        "nvim-tree/nvim-tree.lua",
-        requires = { "nvim-tree/nvim-web-devicons" }
-    })
-
-    use({
-        "romgrk/barbar.nvim",
-        requires = { "nvim-tree/nvim-web-devicons" }
-    })
-
-    use({
-        "nvim-lualine/lualine.nvim",
-        requires = { "kyazdani42/nvim-web-devicons", opt = true }
     })
 
     use({
@@ -55,5 +29,21 @@ return require("packer").startup(function(use)
             "rafamadriz/friendly-snippets",
         }
     })
+
+    use({
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.1",
+        requires = {
+            "nvim-lua/plenary.nvim",
+        }
+    })
+
+    use({ "nvim-tree/nvim-tree.lua" })
+    use({ "akinsho/toggleterm.nvim", tag = '*' })
+    use({ "romgrk/barbar.nvim" })
+    use({ "nvim-lualine/lualine.nvim" })
+
+    use({ "windwp/nvim-autopairs" })
+    use({ "windwp/nvim-ts-autotag" })
 
 end)

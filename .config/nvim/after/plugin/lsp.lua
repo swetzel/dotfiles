@@ -2,6 +2,16 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
+lsp.ensure_installed({
+    "eslint",
+    "tsserver",
+    "cssls",
+    "lua_ls",
+    "vimls",
+    "jsonls",
+    "jdtls"
+})
+
 lsp.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr }
 
