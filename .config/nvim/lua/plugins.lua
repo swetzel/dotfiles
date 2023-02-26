@@ -5,6 +5,7 @@ return require("packer").startup(function(use)
     use({ "wbthomason/packer.nvim" })
     use({ "olimorris/onedarkpro.nvim" })
     use({ "windwp/nvim-autopairs" })
+    use({ "windwp/nvim-ts-autotag" })
 
     use({
         "nvim-treesitter/nvim-treesitter",
