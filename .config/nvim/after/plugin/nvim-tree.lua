@@ -1,4 +1,6 @@
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+    view = { width = 35 }
+})
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeFindFile<CR>:NvimTreeFocus<CR>")
 
