@@ -39,7 +39,6 @@ return require("packer").startup(function(use)
     })
 
     use({ "nvim-tree/nvim-tree.lua" })
-    use({ "akinsho/toggleterm.nvim", tag = '*' })
     use({ "romgrk/barbar.nvim" })
     use({ "nvim-lualine/lualine.nvim" })
 
