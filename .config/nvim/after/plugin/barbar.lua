@@ -1,5 +1,7 @@
 require("bufferline").setup({
     animation = false,
+    closable = false,
+    icons = false,
     icon_separator_active = "| ",
     icon_separator_inactive ="| ",
 })

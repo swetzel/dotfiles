@@ -41,8 +41,10 @@ return require("packer").startup(function(use)
     use({ "nvim-tree/nvim-tree.lua" })
     use({ "romgrk/barbar.nvim" })
     use({ "nvim-lualine/lualine.nvim" })
+    use({ "j-hui/fidget.nvim" })
 
     use({ "windwp/nvim-autopairs" })
     use({ "windwp/nvim-ts-autotag" })
+    use({ "numToStr/Comment.nvim" })
 
 end)
