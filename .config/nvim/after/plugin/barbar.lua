@@ -1,9 +1,11 @@
 require("bufferline").setup({
     animation = false,
-    closable = false,
-    icons = false,
-    icon_separator_active = "| ",
-    icon_separator_inactive ="| ",
+    icons = { 
+        filetype = { enabled = false },
+        modified = { button = false },
+        separator = { left = "| " },
+        inactive = { separator = { left = "| " } },
+    },
 })
 
 local nvim_tree_events = require("nvim-tree.events")
